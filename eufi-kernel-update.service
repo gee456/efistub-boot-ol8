@@ -1,0 +1,14 @@
+[Unit]
+Description=EUFI Kernel Boot Script
+#DefaultDependencies=no
+Before=shutdown.target network.target multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/true
+TimeoutStartSec=120
+ExecStop=/usr/local/scripts/eufi-kernel-update.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
