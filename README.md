@@ -1,5 +1,5 @@
 # efistub-boot-ol8
-Scripts for changing EL8 r 9 to stub boot
+Scripts for changing EL8 or 9 variants to stub boot
 
 This script will update the EUFI listing with the current kernel if the kernel changes. Every time server is restarted this script will check to see if kernel was updated. If it was it changes the EUFI to boot off this new kernel.
 
